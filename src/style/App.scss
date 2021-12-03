@@ -1,0 +1,274 @@
+@import "reset";
+
+.App {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #222;
+  background:rgba(0,0,0,.04);
+}
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background: #fff;
+
+  &-content {
+    margin-left: .625rem;
+    &-title {
+      font-weight: bold;
+      font-size: .75rem;
+      color: #222;
+      padding: .1em 0;
+    }
+
+    &-desc {
+      font-size: .625rem;
+      padding: .5em 0;
+      color: #999;
+    }
+  }
+
+  &-button {
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+
+  
+}
+
+.content {
+  border-radius: 0 0 1.25rem 1.25rem;
+  background: #fff;
+  
+  &-button {
+    margin-top: 1rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+
+  &-user {
+    margin-left: .3rem;
+
+    &-name {
+      font-size: .75rem;
+      padding: .1em 0;
+    }
+
+    &-img {
+      padding: .2em 0;
+      img:not(:first-child) {
+        margin-left: .3rem;
+      }
+
+    }
+  }
+
+  &-main {
+    padding: .937rem;
+  }
+
+  &-article {
+    margin-top: 1.56rem;
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-body {
+      font-weight: 500;
+      font-size: .875rem;
+      line-height: 1.3;
+      letter-spacing: .03em;
+      margin-top: 1rem;
+    }
+
+    &-label {
+      margin-top: .625rem;
+      font-size: .75rem;
+      color: #999;
+
+      span:not(:first-child) {
+        color: #ff69ad;
+        margin-left: .625rem;
+      }
+    }
+  }
+}
+
+.comment {
+  padding: 2rem 1rem 1rem;
+  background: transparent;
+  font-size: .875rem;
+
+  &-title {
+    font-weight: bold;
+  }
+
+  &-list {
+    padding: 1rem 0 2rem 0;
+  }
+
+  &-reply-wrapper {
+    margin-top: 1rem;
+    margin-left: 2.625rem;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-wrapper {
+      &:not(:first-child) {
+        margin-top: 1.875rem;
+      }
+    }
+
+    &-count {
+      font-size: .75rem;
+      color: #999999;
+    }
+
+    &-date {
+      font-size: .75rem;
+      color: #999999;
+      margin-left: .625rem;
+    }
+    .author {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.125rem;
+      height: 1.5rem;
+      border-radius: .75rem;
+      background: #e0e0e0;
+      font-size: .875rem;
+      color: #222;
+      margin-left: .625rem;
+    }
+  }
+
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: .625rem;
+
+    .name {
+      font-size: .875rem;
+      color: #999
+    }
+  }
+
+  &-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content {
+    margin-top: .3125rem;
+  }
+}
+
+.recommended-content {
+  background: #fff;
+  padding: 1rem .625rem 1.875rem .625rem;
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    margin-top: .625rem;
+  }
+
+  &-item {
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    padding-bottom: .6875rem;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+
+    &-title {
+      font-size: .875rem;
+      font-weight: bold;
+      padding: .3rem .625rem;
+      word-spacing: .2rem;
+      letter-spacing: 1px;
+    }
+
+    &-user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: .3rem;
+      font-size: .75rem;
+      padding: 0 .625rem;
+
+      & div {
+        display: flex;
+        align-items: center;
+
+        .name {
+          padding-left: .4em;
+        }
+        .count {
+          color: #999;
+        }
+      }
+    }
+
+    &-icons {
+      position: absolute;
+      top: .625rem;
+      right: .625rem;
+
+      img:not(:first-child) {
+        padding-left: .2rem;
+      }
+    }
+  }
+
+  .title {
+    font-size: .875rem;
+  }
+
+  &-button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background: #8cd1e6;
+    margin-top: 1rem;
+
+    &-text {
+      font-size: .875rem;
+      color: #fff;
+      padding-left: .625rem;
+    }
+  }
+}
+
+
